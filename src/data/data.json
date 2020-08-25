@@ -1,0 +1,480 @@
+{
+  "sunrise": "7:00",
+  "afternoon": "18:00",
+  "sunset": "18:30",
+  "midnight": "19:50",
+  "local-times": [
+    {
+      "From": "00:00",
+      "To": "00:14",
+      "Name": "Mezzanotte"
+    },
+    {
+      "From": "00:15",
+      "To": "00:29",
+      "Name": "Mezzanotte e un quarto"
+    },
+    {
+      "From": "00:30",
+      "To": "00:44",
+      "Name": "Mezzanotte e mezza"
+    },
+    {
+      "From": "00:45",
+      "To": "00:59",
+      "Name": "Un quarto all’una"
+    },
+    {
+      "From": "01:00",
+      "To": "01:14",
+      "Name": "L’una"
+    },
+    {
+      "From": "01:15",
+      "To": "01:29",
+      "Name": "L’una e un quarto"
+    },
+    {
+      "From": "01:30",
+      "To": "01:44",
+      "Name": "L’una e mezza"
+    },
+    {
+      "From": "01:45",
+      "To": "01:59",
+      "Name": "Un quarto alle due"
+    },
+    {
+      "From": "02:00",
+      "To": "02:14",
+      "Name": "Le due"
+    },
+    {
+      "From": "02:15",
+      "To": "02:29",
+      "Name": "Le due e un quarto"
+    },
+    {
+      "From": "02:30",
+      "To": "02:44",
+      "Name": "Le due e mezza"
+    },
+    {
+      "From": "02:45",
+      "To": "02:59",
+      "Name": "Un quarto alle tre"
+    },
+    {
+      "From": "03:00",
+      "To": "03:14",
+      "Name": "Le tre"
+    },
+    {
+      "From": "03:15",
+      "To": "03:29",
+      "Name": "Le tre e un quarto"
+    },
+    {
+      "From": "03:30",
+      "To": "03:44",
+      "Name": "Le tre e mezza"
+    },
+    {
+      "From": "03:45",
+      "To": "03:59",
+      "Name": "Un quarto alle quattro"
+    },
+    {
+      "From": "04:00",
+      "To": "04:14",
+      "Name": "Le quattro"
+    },
+    {
+      "From": "04:15",
+      "To": "04:29",
+      "Name": "Le quattro e un quarto"
+    },
+    {
+      "From": "04:30",
+      "To": "04:44",
+      "Name": "Le quattro e mezza"
+    },
+    {
+      "From": "04:45",
+      "To": "04:59",
+      "Name": "Un quarto alle cinque"
+    },
+    {
+      "From": "05:00",
+      "To": "05:14",
+      "Name": "Le cinque"
+    },
+    {
+      "From": "05:15",
+      "To": "05:29",
+      "Name": "Le cinque e un quarto"
+    },
+    {
+      "From": "05:30",
+      "To": "05:44",
+      "Name": "Le cinque e mezza"
+    },
+    {
+      "From": "05:45",
+      "To": "05:59",
+      "Name": "Un quarto all’alba"
+    },
+    {
+      "From": "06:00",
+      "To": "06:14",
+      "Name": "L’alba"
+    },
+    {
+      "From": "06:15",
+      "To": "06:29",
+      "Name": "Un quarto dopo l’alba"
+    },
+    {
+      "From": "06:30",
+      "To": "06:44",
+      "Name": "Mezza dopo l’alba"
+    },
+    {
+      "From": "06:45",
+      "To": "06:59",
+      "Name": "Un quarto all’una"
+    },
+    {
+      "From": "07:00",
+      "To": "07:14",
+      "Name": "L’una"
+    },
+    {
+      "From": "07:15",
+      "To": "07:29",
+      "Name": "L’una e un quarto"
+    },
+    {
+      "From": "07:30",
+      "To": "07:44",
+      "Name": "L’una e mezza"
+    },
+    {
+      "From": "07:45",
+      "To": "07:59",
+      "Name": "Un quarto alle due"
+    },
+    {
+      "From": "08:00",
+      "To": "08:14",
+      "Name": "Le due"
+    },
+    {
+      "From": "08:15",
+      "To": "08:29",
+      "Name": "Le due e un quarto"
+    },
+    {
+      "From": "08:30",
+      "To": "08:44",
+      "Name": "Le due e mezza"
+    },
+    {
+      "From": "08:45",
+      "To": "08:59",
+      "Name": "Un quarto alle tre"
+    },
+    {
+      "From": "09:00",
+      "To": "09:14",
+      "Name": "Le tre"
+    },
+    {
+      "From": "09:15",
+      "To": "09:29",
+      "Name": "Le tre e un quarto"
+    },
+    {
+      "From": "09:30",
+      "To": "09:44",
+      "Name": "Le tre e mezza"
+    },
+    {
+      "From": "09:45",
+      "To": "09:59",
+      "Name": "Un quarto alle quattro"
+    },
+    {
+      "From": "10:00",
+      "To": "10:14",
+      "Name": "Le quattro"
+    },
+    {
+      "From": "10:15",
+      "To": "10:29",
+      "Name": "Le quattro e un quarto"
+    },
+    {
+      "From": "10:30",
+      "To": "10:44",
+      "Name": "Le quattro e mezza"
+    },
+    {
+      "From": "10:45",
+      "To": "10:59",
+      "Name": "Un quarto alle cinque"
+    },
+    {
+      "From": "11:00",
+      "To": "11:14",
+      "Name": "Le cinque"
+    },
+    {
+      "From": "11:15",
+      "To": "11:29",
+      "Name": "Le cinque e un quarto"
+    },
+    {
+      "From": "11:30",
+      "To": "11:44",
+      "Name": "Le cinque e mezza"
+    },
+    {
+      "From": "11:45",
+      "To": "11:59",
+      "Name": "Un quarto a mezzodì"
+    },
+    {
+      "From": "12:00",
+      "To": "12:14",
+      "Name": "Mezzodì"
+    },
+    {
+      "From": "12:15",
+      "To": "12:29",
+      "Name": "Un quarto dopo mezzodì"
+    },
+    {
+      "From": "12:30",
+      "To": "12:44",
+      "Name": "La mezza"
+    },
+    {
+      "From": "12:45",
+      "To": "12:59",
+      "Name": "Un quarto all’una"
+    },
+    {"From": "13:00", "To": "13:14", "Name": "L’una"},
+    {
+      "From": "13:15",
+      "To": "13:29",
+      "Name": "L’una e un quarto"
+    },
+    {
+      "From": "13:30",
+      "To": "13:44",
+      "Name": "L’una e mezza"
+    },
+    {
+      "From": "13:45",
+      "To": "13:59",
+      "Name": "Un quarto alle due"
+    },
+    {
+      "From": "14:00",
+      "To": "14:14",
+      "Name": "Le due"
+    },
+    {
+      "From": "14:15",
+      "To": "14:29",
+      "Name": "Le due e un quarto"
+    },
+    {
+      "From": "14:30",
+      "To": "14:44",
+      "Name": "Le due e mezza"
+    },
+    {
+      "From": "14:45",
+      "To": "14:59",
+      "Name": "Un quarto alle tre"
+    },
+    {
+      "From": "15:00",
+      "To": "15:14",
+      "Name": "Le tre"
+    },
+    {
+      "From": "15:15",
+      "To": "15:29",
+      "Name": "Le tre e un quarto"
+    },
+    {
+      "From": "15:30",
+      "To": "15:44",
+      "Name": "Le tre e mezza"
+    },
+    {
+      "From": "15:45",
+      "To": "15:59",
+      "Name": "Un quarto alle quattro"
+    },
+    {
+      "From": "16:00",
+      "To": "16:14",
+      "Name": "Le quattro"
+    },
+    {
+      "From": "16:15",
+      "To": "16:29",
+      "Name": "Le quattro e un quarto"
+    },
+    {
+      "From": "16:30",
+      "To": "16:44",
+      "Name": "Le quattro e mezza"
+    },
+    {
+      "From": "16:45",
+      "To": "16:59",
+      "Name": "Un quarto alle cinque"
+    },
+    {
+      "From": "17:00",
+      "To": "17:14",
+      "Name": "Le cinque"
+    },
+    {
+      "From": "17:15",
+      "To": "17:29",
+      "Name": "Le cinque e un quarto"
+    },
+    {
+      "From": "17:30",
+      "To": "17:44",
+      "Name": "Le cinque e mezza"
+    },
+    {
+      "From": "17:45",
+      "To": "17:59",
+      "Name": "Un quarto al tramonto"
+    },
+    {
+      "From": "18:00",
+      "To": "18:14",
+      "Name": "Il tramonto"
+    },
+    {
+      "From": "18:15",
+      "To": "18:29",
+      "Name": "Un quarto dopo il tramonto"
+    },
+    {
+      "From": "18:30",
+      "To": "18:44",
+      "Name": "I vesperi"
+    },
+    {
+      "From": "18:45",
+      "To": "18:59",
+      "Name": "Un quarto all’una"
+    },
+    {"From": "19:00", "To": "19:14", "Name": "L’una"},
+    {
+      "From": "19:15",
+      "To": "19:29",
+      "Name": "L’una e un quarto"
+    },
+    {
+      "From": "19:30",
+      "To": "19:44",
+      "Name": "L’una e mezza"
+    },
+    {
+      "From": "19:45",
+      "To": "19:59",
+      "Name": "Un quarto alle due"
+    },
+    {
+      "From": "20:00",
+      "To": "20:14",
+      "Name": "Le due"
+    },
+    {
+      "From": "20:15",
+      "To": "20:29",
+      "Name": "Le due e un quarto"
+    },
+    {
+      "From": "20:30",
+      "To": "20:44",
+      "Name": "Le due e mezza"
+    },
+    {
+      "From": "20:45",
+      "To": "20:59",
+      "Name": "Un quarto alle tre"
+    },
+    {
+      "From": "21:00",
+      "To": "21:14",
+      "Name": "Le tre"
+    },
+    {
+      "From": "21:15",
+      "To": "21:29",
+      "Name": "Le tre e un quarto"
+    },
+    {
+      "From": "21:30",
+      "To": "21:44",
+      "Name": "Le tre e mezza"
+    },
+    {
+      "From": "21:45",
+      "To": "21:59",
+      "Name": "Un quarto alle quattro"
+    },
+    {
+      "From": "22:00",
+      "To": "22:14",
+      "Name": "Le quattro"
+    },
+    {
+      "From": "22:15",
+      "To": "22:29",
+      "Name": "Le quattro e un quarto"
+    },
+    {
+      "From": "22:30",
+      "To": "22:44",
+      "Name": "Le quattro e mezza"
+    },
+    {
+      "From": "22:45",
+      "To": "22:59",
+      "Name": "Un quarto alle cinque"
+    },
+    {
+      "From": "23:00",
+      "To": "23:14",
+      "Name": "Le cinque"
+    },
+    {
+      "From": "23:15",
+      "To": "23:29",
+      "Name": "Le cinque e un quarto"
+    },
+    {
+      "From": "23:30",
+      "To": "23:44",
+      "Name": "Le cinque e mezza"
+    },
+    {
+      "From": "23:45",
+      "To": "23:59",
+      "Name": "Un quarto a mezzanotte"
+    }
+  ]
+}
