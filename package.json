@@ -17,6 +17,7 @@
     "react-native-anchor-point": "^1.0.1",
     "react-native-elements": "^2.0.0",
     "react-native-gesture-handler": "^1.6.1",
+    "react-native-global-font": "^1.0.2",
     "react-native-material-buttons": "^0.6.0",
     "react-native-material-dropdown": "^0.11.1",
     "react-native-material-ripple": "^0.9.1",
@@ -49,5 +50,8 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "assets": [
+    "./src/assets/fonts/"
+  ]
 }

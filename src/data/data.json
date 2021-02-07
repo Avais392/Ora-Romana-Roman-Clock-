@@ -476,5 +476,50 @@
       "To": "23:59",
       "Name": "Un quarto a mezzanotte"
     }
+  ],
+  "time-labels": [
+    {
+      "sunrise-to-afternoon": "È giorno",
+      "afternoon-to-sunset": "Mezzogiorno",
+      "sunset-to-midnight": "L’Ave Maria",
+      "midnight-to-sunrise": "Mezzanotte"
+    },
+    {
+      "sunrise-to-afternoon": "Un quarto dopo l’alba",
+      "afternoon-to-sunset": "Mezzogiorno e un quarto",
+      "sunset-to-midnight": "Un quarto dopo l’Ave Maria",
+      "midnight-to-sunrise": "Mezzanotte e un quarto"
+    },
+    {
+      "sunrise-to-afternoon": "Mezza dopo l’alba",
+      "afternoon-to-sunset": "La mezza",
+      "sunset-to-midnight": "I vespri",
+      "midnight-to-sunrise": "Mezzanotte e mezza"
+    },
+    {"general": "Un quarto all’una"},
+    {"general": "È l’unaÈ l’una e un quarto"},
+    {"general": "È l’una e mezza"},
+    {"general": "Un quarto alle due"},
+    {"general": "Sono le due"},
+    {"general": "Sono le due e un quarto"},
+    {"general": "Sono le due e mezza"},
+    {"general": "Un quarto alle tre"},
+    {"general": "Sono le tre"},
+    {"general": "Sono le tre e un quarto"},
+    {"general": "Sono le tre e mezza"},
+    {"general": "Un quarto alle quattro"},
+    {"general": "Sono le quattro"},
+    {"general": "Sono le quattro e un quarto"},
+    {"general": "Sono le quattro e mezza"},
+    {"general": "Un quarto alle cinque"},
+    {"general": "Sono le cinque"},
+    {"general": "Sono le cinque e un quarto"},
+    {"general": "Sono le cinque e mezza"},
+    {
+      "sunrise-to-afternoon": "Un quarto a mezzogiorno",
+      "afternoon-to-sunset": "Un quarto all’Ave Maria",
+      "sunset-to-midnight": "Quasi mezzanotte",
+      "midnight-to-sunrise": "È quasi giorno"
+    }
   ]
 }

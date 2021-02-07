@@ -11,9 +11,12 @@ import {
   Dimensions,
   Platform,
   TouchableOpacity,
+  Button,
 } from 'react-native';
 import {Svg, Path, Rect, G, Circle, SvgAst} from 'react-native-svg';
 import {Icon} from 'react-native-elements';
+import {Scene, Router, Actions} from 'react-native-router-flux';
+
 import moment from 'moment';
 import data from '../data/data.json';
 import AnalogClock1 from '../components/AnalogClock';
@@ -22,19 +25,20 @@ var SunCalc = require('suncalc');
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 const AnimatedG = Animated.createAnimatedComponent(G);
 
-let times = SunCalc.getTimes(new Date(), 41.9028, 12.4964);
+let times = SunCalc.getTimes(new Date(), 31.5204, 74.3587 );
 Object.keys(times).map(
   (key) => (times[key] = moment(times[key]).format('YYYY-MM-DD HH:mm:ss')),
 );
-
+console.log('mappedTimes',times)
 const {width, height} = Dimensions.get('window');
 
 var categories = Array(6).fill(false);
 
 class HomeScreen extends Component {
   scrollX = new Animated.Value(0);
-
+  
   constructor(props) {
+   
     super(props);
     this.state = {
       status: '',
@@ -70,7 +74,7 @@ class HomeScreen extends Component {
     }
   };
   componentDidMount() {
-    console.log(data['local-times']);
+    // console.log(data['local-times']);
     Animated.loop(
       Animated.timing(this.state.rotation, {
         useNativeDriver: true,
@@ -91,7 +95,7 @@ class HomeScreen extends Component {
     const offsetAndroid = this.state.offset;
     const [pivotX, pivotY] = [25, 25];
     return (
-      <ScrollView style={{flex: 1, backgroundColor: '#fff'}}>
+      <ScrollView style={{ backgroundColor: '#fff', }}>
         <View
           style={{
             ...styles.container,
@@ -102,13 +106,18 @@ class HomeScreen extends Component {
             minuteHandLength={110}
             times={times}
             statusCallback={(status) => this.setState({status})}
+            timeLabelCallback={(timeLabel) => this.setState({timeLabel})}
           />
           <Text style={styles.localtime}>
-            {this._hourName() + '\n'}
-            {'(' + moment().format('HH:MM ') + ' ora locale)'}
-            {/* {this._hourName()} */}
+            {(this.state.timeLabel || '') + '\n\n'}
+            {'(' + moment().format('hh:mm') + ' ora italiana)'}
+            {/* {console.log(moment())} */}
+            {/* {this._hourName()}  */}
+            
           </Text>
+          <Button title='ABOUT US' style={{}} onPress={()=>Actions.push('About')}></Button>
         </View>
+      
       </ScrollView>
     );
   }
@@ -117,48 +126,42 @@ class HomeScreen extends Component {
 HomeScreen.defaultProps = {};
 HomeScreen.navigationOptions = {
   title: '',
-  headerStyle: {
-    height: 0,
-  },
+  
+ 
 };
 
 const styles = StyleSheet.create({
   container: {
     width: width,
+    flex:1,
     height: height,
-    justifyContent: 'center',
+   
+    justifyContent: 'space-around',
     alignItems: 'center',
     // backgroundColor: '#00f',
   },
-  horizontalSeperator: {
-    borderBottomWidth: 1,
-    borderColor: '#ddd',
-    width: '70%',
-    marginVertical: 20,
-    alignSelf: 'center',
-  },
+ 
+
   heading: {
+    fontFamily:'Trajan-Bold',
     fontSize: 30,
-    fontWeight: 'bold',
-    top: 50,
-    position: 'absolute',
+    
+    
+    // top: 50,
+    // position: 'absolute',
+    // marginTop:10,
     color: '#fff',
   },
-  header: {
-    // backgroundColor: theme.colors.white,
-    padding: 30,
-    flex: 0,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
+ 
   localtime: {
-    fontSize: 30,
-    fontWeight: 'bold',
-    bottom: 100,
-    position: 'absolute',
+    // fontFamily: 'Trajan',
+    fontSize: 25,
+    // fontWeight: 'bold',
+    // bottom: 100,
+    // position: 'absolute',
     textAlign: 'center',
     color: '#fff',
+    padding: 10,
   },
 });
 

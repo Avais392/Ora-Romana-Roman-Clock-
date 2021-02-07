@@ -29,6 +29,23 @@ export default class AnalogClock extends Component {
     difference = difference * 60;
     return difference;
   }
+  _getTimeLabel() {
+    let quarterIndex =
+      this.state?.timePassedInSeconds / this.state?.quarterTime;
+    quarterIndex = parseInt(quarterIndex);
+    // console.log('Qindex', quarterIndex);
+    if (data['time-labels'][quarterIndex]) {
+      this.props.timeLabelCallback(
+        data['time-labels'][quarterIndex][this.state?.status] ||
+          data['time-labels'][quarterIndex]['general'],
+      );
+      // console.log(
+      //   'status',
+      //   data['time-labels'][quarterIndex][this.state?.status] ||
+      //     data['time-labels'][quarterIndex]['general']
+      // );
+    }
+  }
   timeFunction() {
     let timeSpan = 0;
     let d = new Date();
@@ -36,7 +53,7 @@ export default class AnalogClock extends Component {
     // console.log('timesFunc', times);
     let currentTime = [d.getHours(), d.getMinutes()];
     let sunrise = times.dawn.split(' ')[1];
-    console.log('timesFunc', times);
+    // console.log('timesFunc', times);
     sunrise = sunrise.split(':').map((x) => parseInt(x));
     let afternoon = times.solarNoon.split(' ')[1];
     afternoon = afternoon.split(':').map((x) => parseInt(x));
@@ -60,6 +77,7 @@ export default class AnalogClock extends Component {
         timePassedInSeconds,
         offset: 360 / timeSpan,
         dottedClock: false,
+        status: 'sunrise-to-afternoon',
       });
 
       this.props.statusCallback('sunrise-to-afternoon');
@@ -78,6 +96,7 @@ export default class AnalogClock extends Component {
         timePassedInSeconds,
         offset: 360 / timeSpan,
         dottedClock: true,
+        status: 'afternoon-to-sunset',
       });
       this.props.statusCallback('afternoon-to-sunset');
       this.ClockFrame = '../assets/DottedClock.png';
@@ -95,6 +114,7 @@ export default class AnalogClock extends Component {
         timePassedInSeconds,
         offset: 360 / timeSpan,
         dottedClock: true,
+        status: 'sunset-to-midnight',
       });
       this.props.statusCallback('sunset-to-midnight');
       this.ClockFrame = '../assets/DottedClock.png';
@@ -121,20 +141,19 @@ export default class AnalogClock extends Component {
         timePassedInSeconds,
         offset: 360 / timeSpan,
         dottedClock: false,
+        status: 'midnight-to-sunrise',
       });
       this.props.statusCallback('midnight-to-sunrise');
       this.ClockFrame = '../assets/Clock.png';
     }
     this.setState({counter: timePassedInSeconds, quarterTime: timeSpan / 24});
-    const quarterIndex =
-      this.state.timePassedInSeconds / this.state.quarterTime;
-      
+    this._getTimeLabel();
   }
   componentDidMount() {
     this.timer = setInterval(() => {
       let d = new Date();
 
-      console.log(this.state);
+      // console.log(this.state);
       this.timeFunction();
       this.setState({hour: this.state.offset * this.state.counter + 90});
       this.setState({counter: (this.state.counter + 1) % this.state.timeSpan});
@@ -225,7 +244,7 @@ export default class AnalogClock extends Component {
           source={
             this.state.dottedClock
               ? require('../assets/DottedClock.png')
-              : require('../assets/Clock.png')
+              : require('../assets/DottedClock.png')
           }
         />
 

@@ -3,6 +3,7 @@ import {View, TouchableOpacity} from 'react-native';
 import {Scene, Router, Actions} from 'react-native-router-flux';
 
 import HomeScreen from './screens/HomeScreen.js';
+import AboutUsScreen from './screens/AboutUs'
 
 // const InboxIcon = () => {
 //   return (
@@ -18,7 +19,7 @@ import {Icon} from 'react-native-elements';
 const RouterComponent = () => {
   return (
     <Router>
-      <Scene key="root">
+      <Scene key="root" headerMode="none" >
         {/* <Scene
           // icon={<Icon name="list" type="font-awesome" color="#f50" size={15} />}
           renderRightButton={InboxIcon}
@@ -34,6 +35,7 @@ const RouterComponent = () => {
         /> */}
 
         <Scene initial={true} key="Home" component={HomeScreen} />
+        <Scene  key="About" component={AboutUsScreen} />
       </Scene>
     </Router>
   );
